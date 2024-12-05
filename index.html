@@ -93,7 +93,7 @@
  <h3 id="Introduction">Introduction</h3>
 <hr>
  <p class="ex1">
- <pre>
+ <pre id="Introduction_InText">
  “An estimated 15,900 upper limb amputations are performed in the USA each year, and ~6,300 in the EU (Malešević, N. & Antfolk, C. 2024)”. 
  The development and improvement of sensory feedback technologies in prosthetic limbs would not only help thousands of people every year improve
  the physical aspects of their lives, but also mental and emotional aspects. A recent study shows that out of 100 amputees seeking treatment,
@@ -108,7 +108,7 @@
  <h3 id=”Analysis and Discussion”>Analysis and Discussion</h3>
 <hr>
  <p class="ex1">
- <pre>
+ <pre id="Analysis_InText">
  “There is evidence of the use of prostheses from the times of the ancient Egyptians. (Thurston, A. J. 2007)” highlighting the importance and the 
  value, be it societal or personal, of at least partial limb functionality throughout generations and in different civilisations. These prosthetics, 
  when compared to ones of today, are crude and likely not too efficient at their function due to the use of heavy or brittle materials or just materials 
@@ -165,8 +165,6 @@
     </head>
     
 </html>
-
-</script>
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
@@ -239,8 +237,8 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("Analysis and Discussion");
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
@@ -249,3 +247,4 @@
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
 </script>
+    
